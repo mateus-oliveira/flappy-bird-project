@@ -7,8 +7,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject message, duck;
     [SerializeField] private GameObject pipes, source;
     private float interval = 1f;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +22,7 @@ public class GameController : MonoBehaviour
             Quaternion.identity         // Com rotação padrão (sem rotação, identidade)
         );
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
