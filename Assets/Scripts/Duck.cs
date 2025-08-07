@@ -37,4 +37,20 @@ public class Duck : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Score"))
+        {
+            GameController.instance.IncreaseScore(1);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Pipe") || other.gameObject.CompareTag("Ground"))
+        {
+            GameController.instance.GameOver();
+        }
+    }
+
 }
