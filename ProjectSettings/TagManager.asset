@@ -6,6 +6,8 @@ TagManager:
   tags:
   - DestroyPoint
   - Score
+  - Pipe
+  - Ground
   layers:
   - Default
   - TransparentFX
