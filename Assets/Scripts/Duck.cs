@@ -8,6 +8,7 @@ public class Duck : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private float jumpSpeed;
+    [SerializeField] private AudioClip jumpSound;
 
 
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class Duck : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Teclou o Espaço");
+            AudioController.instance.PlayAudio(jumpSound);
             jumping = true;
         }
     }
