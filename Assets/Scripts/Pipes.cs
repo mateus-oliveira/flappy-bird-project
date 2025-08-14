@@ -13,6 +13,7 @@ public class Pipes : MonoBehaviour
         float randomY = Random.Range(-2f, 2f);
         transform.position = new Vector2(transform.position.x, randomY);
 
+        // Probabilidade de oscilar
         yVariable = Random.Range(-1, 5) < 0;
         if (yVariable) {
             OscilateY();
@@ -30,6 +31,7 @@ public class Pipes : MonoBehaviour
 
     void OscilateY()
     {
+        // Pontuação mínima para oscilar
         if (GameController.instance.GetScore() < 10) return;
 
         float variation = 0.08f;

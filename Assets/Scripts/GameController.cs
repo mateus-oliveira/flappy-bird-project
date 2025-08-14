@@ -67,6 +67,7 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+        return;
         gameOver.SetActive(true);
         Time.timeScale = 0;
     }
