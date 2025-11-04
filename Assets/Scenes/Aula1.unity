@@ -475,7 +475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &729552267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1287,6 +1287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 15
   jumpSound: {fileID: 8300000, guid: 04944994e02404e5bb6772974a610c65, type: 3}
+  scoreSound: {fileID: 8300000, guid: b4a2d67ead76e479fa6c728b39360769, type: 3}
+  collisionSound: {fileID: 8300000, guid: 8d8907448b08c42e3a56456f788fb0f6, type: 3}
 --- !u!60 &1913419187
 PolygonCollider2D:
   m_ObjectHideFlags: 0
